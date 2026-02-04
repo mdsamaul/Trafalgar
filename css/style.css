@@ -1,0 +1,122 @@
+:root{
+    --max-width:1273px;
+    --logo-width:160px;
+    --logo-hight:41px;
+    --max-height:100vh;
+    --banner-height:719px;
+    --img-width:665px;
+    --img-heigth:477px;
+    --text-width:486px;
+    --text-height:388px;
+    --btn-widht:200px;
+    --btn-heigth:56px;
+}
+*{
+    /* margin: 0px; */
+    padding: 0px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+}
+.container{
+    width: var(--max-width);
+    margin: 0px auto;  
+}
+
+.head-nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.headLeftLogo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: var(--logo-width);
+    height: var(--logo-hight);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .3s ease;
+    object-fit: scale-down;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    transform: scale(1.1)
+}
+.logo img:hover{
+    opacity: 1;
+    transform: scale(1.15);
+}
+.headRightnav ul {
+    display: flex;
+    gap: 40px;
+}
+.headRightnav ul li {
+  list-style: none;
+}
+.headRightnav ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8F8A9A;
+  transition: 0.3s ease;
+}
+.headRightnav ul li a.active{
+  font-weight: 600;
+  color: #1F1534;
+}
+.headRightnav ul li a:hover{
+  color: #1F1534;
+}
+.container-hero{
+    width: var(--max-width);
+    height: inherit;
+    margin: 0 auto;
+}
+
+.banner{
+    height: var(--banner-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-left{
+    width: var(--text-width);
+    height: var(--text-height);
+}
+.banner-left h3{
+    font-weight: 700;
+    font-size: 48px;
+}
+.banner-left p{
+    font-weight: 300;
+    font-size: 21px;
+    color: #7D7987;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.banner-left button{
+    width: var(--btn-widht);
+    height: var(--btn-heigth);
+    border-radius: 55px;
+    background-color: #458FF6;
+    border: 1px solid #458FF6;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.banner-left button:hover{   
+    background-color: #fff;
+    border: 1px solid #458FF6;
+    color: #458FF6;
+}
+.banner-img{
+    width: var(--img-width);
+    height: var(--img-heigth);
+}
+.banner-img img{
+     width: var(--img-width);
+   object-fit: cover;
+}
