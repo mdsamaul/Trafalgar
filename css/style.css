@@ -16,6 +16,8 @@
     --section-title-font-color:#000000;
     --sectioni-details-font-size:18px;
     --sectioni-details-font-color:#7D7987;
+    --cart-widht:350px;
+    --cart-height:314px;
 }
 .section-title{
     font-weight: 700;
@@ -88,6 +90,10 @@
     width: var(--max-width);
     height: inherit;
     margin: 0 auto;
+    background-image: url(../assets/images/dot.png);
+    background-position: left top;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .banner{
@@ -140,15 +146,16 @@
 .our-service-container {
     margin-top: var(--top-botton-mtb);
     width: var(--max-width);
-    margin: auto;
-    display: flex;
+    margin: auto;   
     padding-top: 200px;
-    justify-content: center;
-    background-image: url(../assets/images/bg-element.png);
-    background:no-repeat;
-    object-fit: fill;
+
     height: 1133px;
 }
+.our-service-container-head{
+    display: flex; 
+    justify-content: center;
+}
+
 .our-service-body{   
     text-align: center;
     width: 952px;
@@ -157,4 +164,64 @@
     margin: auto;
     border: 2px solid #000000;
    width: 56px;
+}
+
+.section-cart-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+        background-image: url(../assets/images/bg-element.png), url(../assets/images/dot.png);
+    background-repeat:no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: auto, auto;
+}
+
+.cart-container{
+    width: var(--cart-widht);
+    height: var(--cart-height);
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 10px 40px 50px #E5E9F666;
+    padding-top:54px;
+    padding-left: 34px;
+}
+
+.cart-img{
+    width: 92px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.cart-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 22px;
+}
+.cart-decription{
+    font-weight: 300;
+    font-size: 16px;
+    color: #7D7987;
+    width: 266px;
+}
+.btn-cart-section{
+    text-align: center;
+    margin-top: 70px;
+}
+.btn-cart-learn-more{
+    width: var(--btn-widht);
+    height: var(--btn-heigth);
+    border-radius: 55px;
+    background-color: #ffffff;
+    border: 1px solid #458FF6;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: #458FF6;
+}
+.btn-cart-learn-more:hover{   
+    background-color: #458FF6;
+    border: 1px solid #458FF6;
+    color: #fff;
 }
