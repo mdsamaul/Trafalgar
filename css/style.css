@@ -18,6 +18,7 @@
     --sectioni-details-font-color:#7D7987;
     --cart-widht:350px;
     --cart-height:314px;
+    --hr-width:56px;
 }
 .section-title{
     font-weight: 700;
@@ -148,7 +149,6 @@
     width: var(--max-width);
     margin: auto;   
     padding-top: 200px;
-
     height: 1133px;
 }
 .our-service-container-head{
@@ -163,7 +163,7 @@
 .service-hr {
     margin: auto;
     border: 2px solid #000000;
-   width: 56px;
+   width:var(--hr-width);
 }
 
 .section-cart-container{
@@ -221,6 +221,139 @@
     color: #458FF6;
 }
 .btn-cart-learn-more:hover{   
+    background-color: #458FF6;
+    border: 1px solid #458FF6;
+    color: #fff;
+}
+
+.healthcare-sectioin{
+    margin-top: 220px;   
+}
+.healthcare-container{    
+    margin: auto;
+    width: var(--max-width);  
+    height: 477px;
+}
+
+.healthcare-containt{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.healthcare-left{
+    width: var(--img-width);
+    height: var(--img-heigth);
+}
+.healthcare-left img{
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: var(--img-width);
+    height: var(--img-heigth);
+}
+
+.healthcare-right{
+    width: var(--text-width);
+    height: var(--text-height);
+}
+
+.healthcare-title{
+    font-size: var(--section-title-font-size);
+    font-weight: 700;
+}
+.healthcare-hr{
+    width: var(--hr-width);
+    border: 2px solid black;
+    border-radius: 10px;;
+}
+.healthcare-description{   
+    width: 400px;
+}
+.healthcare-description p{   
+    color: var(--sectioni-details-font-color);
+    font-size: var(--sectioni-details-font-size);
+    font-weight: 300;
+}
+.healthcare-btn button{
+    width: var(--btn-widht);
+    height: var(--btn-heigth);
+    border-radius: 55px;
+    background-color: #ffffff;
+    border: 1px solid #458FF6;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: #458FF6;
+}
+.healthcare-btn button:hover{   
+    background-color: #458FF6;
+    border: 1px solid #458FF6;
+    color: #fff;
+}
+
+.mobile-apps-sectioin{
+    width: var(--max-width);
+    margin: auto;
+    height: 675px;
+    background-image: url(../assets/images/dot.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+}
+.mobile-apps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    height: 675px;;
+}
+
+.mobile-apps-right {
+    width: var(--img-width);
+    height: var(--img-heigth);   
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.mobile-apps-left{
+    width: 420px;
+    height: 375px;
+}
+.mobile-apps-title{
+    font-weight: 700;
+    font-size: var(--section-title-font-size);
+    color: var(--section-title-font-color);
+    /* width: 254px; */
+
+}
+.mobile-apps-hr{
+    width: var(--hr-width);
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.mobile-apps-description{
+    font-size: var(--sectioni-details-font-size);
+    color: var(--sectioni-details-font-color);
+    font-weight: 300;
+    width: 420px;
+}
+.mobile-apps-right img {
+    width: var(--img-width);
+    height: var(--img-heigth);
+}
+
+.mobile-apps-btn  button{
+    width: var(--btn-widht);
+    height: var(--btn-heigth);
+    border-radius: 55px;
+    background-color: #ffffff;
+    border: 1px solid #458FF6;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: #458FF6;
+}
+.mobile-apps-btn  button:hover{   
     background-color: #458FF6;
     border: 1px solid #458FF6;
     color: #fff;
