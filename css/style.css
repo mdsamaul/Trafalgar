@@ -358,3 +358,42 @@
     border: 1px solid #458FF6;
     color: #fff;
 }
+.customer-saying-section{
+    margin-top: 250px;
+  
+}
+
+.customer-saying-contaner{
+    width: var(--max-width);
+    height: 502px;
+    border: 1px solid red;
+    margin: auto;
+     background-image: url(../assets/images/dot.png);
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: bottom left;
+}
+.customer-saying-containt {
+    margin: auto;
+    width: 1120px;
+    height: 425px;
+    background: linear-gradient(
+        90deg,
+        #5A98F2,     
+        #67C3F3   
+    );
+    z-index: 10;
+}
+
+.customer-saying-body {
+    margin-top: 15px;
+    width: 1120px;
+    height: 425px;
+    border: 1px solid red;
+    border-radius: 24px;
+    z-index: 20;
+    background-image: url(../assets/images/gdot.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top right;
+}
