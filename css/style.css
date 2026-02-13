@@ -89,6 +89,12 @@
 .headRightnav ul li a:hover{
   color: #1F1534;
 }
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1F1534;
+}
 .container-hero{
     width: var(--max-width);
     height: inherit;
@@ -165,7 +171,7 @@
 .service-hr {
     margin: auto;
     border: 2px solid #000000;
-   width:var(--hr-width);
+    width:var(--hr-width);
 }
 
 .section-cart-container{
@@ -561,7 +567,7 @@ color: #7D7987;
 }
 .footer-containt{
     width: 391px;
-color: #fff;
+    color: #fff;
 }
 .footer-center-nav{
     display: flex;
@@ -604,4 +610,198 @@ color: #fff;
     font-weight: 300;
     font-size: 18px;
     cursor: pointer;
+}
+
+/* Responsive CSS */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1024px) {
+    :root {
+        --max-width: 90%;
+        --banner-height: auto;
+        --img-width: 100%;
+        --img-heigth: auto;
+        --text-width: 100%;
+        --text-height: auto;
+        --cart-widht: auto;
+        --cart-height: auto;
+    }
+
+    .container, .our-service-container, .healthcare-container, .mobile-apps-sectioin, .customer-saying-contaner, .latest-article-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .banner-left {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .banner-img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .section-cart-container, .latest-article-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .healthcare-containt, .mobile-apps-container {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0;
+    }
+    
+    .healthcare-left, .mobile-apps-right {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 30px;
+    }
+    
+    .healthcare-right, .mobile-apps-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-apps-container{
+        flex-direction: column-reverse;
+    }
+    
+    .healthcare-description, .mobile-apps-description {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .healthcare-hr, .mobile-apps-hr {
+        margin: 0 auto;
+    }
+    
+    .customer-saying-containt, .customer-saying-body {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .customer-saying-body h3{
+        padding-top: 20px;
+    }
+    
+    .customer-man-section {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .customer-man-section-left {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    
+    .customer-man-section-right {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .footer-containt {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-center-nav {
+         justify-content: center;
+         gap: 50px;
+    }
+
+    .footer-section {
+        height: auto;
+    }
+
+    .our-service-body{
+        width: 100%;
+    }
+    .our-service-container{
+        height: auto;
+        padding-bottom: 50px;
+        margin-top: 50px;
+        padding-top: 100px;
+    }
+    .mobile-apps-sectioin{
+        height: auto;
+    }
+}
+
+/* Mobile (<= 767px) */
+@media (max-width: 767px) {
+    :root {
+        --section-title-font-size: 28px;
+    }
+
+    .head-nav {
+        position: relative;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .headRightnav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        z-index: 1000;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .headRightnav.active {
+        display: block;
+    }
+    
+    .headRightnav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .section-cart-container, .latest-article-container {
+        grid-template-columns: 1fr;
+    }
+
+     .banner-left h3 {
+        font-size: 32px;
+    }
+     .footer-center-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-section-container{
+        background-position: left bottom, right top;
+    }
+    .customer-saying-section{
+        margin-top: 100px;
+    }
+    .latest-article-section{
+        margin: 100px auto;
+    }
+    .our-service-container{
+        margin-top: 0;
+    }
 }
